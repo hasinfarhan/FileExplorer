@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="451.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myexplorer.TileviewController">
+   <children>
+      <ToolBar layoutY="24.0" prefHeight="40.0" prefWidth="639.0">
+         <items>
+            <Label prefHeight="17.0" prefWidth="68.0" text="CurDirectory:">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="30.0" prefWidth="359.0" />
+            <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="79.0" text="New Folder">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <SplitMenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="ViewStyle">
+              <items>
+                <MenuItem mnemonicParsing="false" text="List View" />
+                <MenuItem mnemonicParsing="false" text="Tile View" />
+              </items>
+            </SplitMenuButton>
+         </items>
+      </ToolBar>
+      <TreeView layoutY="64.0" prefHeight="340.0" prefWidth="215.0" />
+      <Button layoutX="560.0" layoutY="417.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Open" />
+      <Button layoutX="475.0" layoutY="417.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Back" />
+      <Label layoutX="269.0" layoutY="6.0" prefHeight="20.0" prefWidth="79.0" text="File Explorer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <FlowPane layoutX="215.0" layoutY="64.0" prefHeight="340.0" prefWidth="419.0">
+         <children>
+            <TilePane prefHeight="340.0" prefWidth="420.0" />
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
